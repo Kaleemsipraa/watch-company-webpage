@@ -1,0 +1,5 @@
+# Ignore node_modules
+node_modules/
+
+# Ignore design_template folder
+design_tamplate/
