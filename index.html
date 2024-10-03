@@ -1,32 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Watch company</title>
-  <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
-  <link rel="stylesheet" href="./src/output.css">
-</head>
-<body>
-  <header>
-    <div class="logo"></div>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Mens</a></li>
-        <li><a href="#">Womens</a></li>
-        <li><a href="#">Collection</a></li>
-        <li><a href="#">About us</a></li>
-        <li><a href="#"><i class="ri-shopping-cart-2-fill"></i></a></li>
-        <li><a href="#"><i class="ri-account-circle-line"></i></i></a></li>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Watch company</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+
+  <body class="overflow-x-hidden">
+    <nav
+      class="z-50 flex w-full justify-between px-8 py-4 fixed top-0 left-0 shadow-md bg-white"
+    >
+      <div id="logo">
+        <a href="#" class="py-2 px-3 text-xl font-bold"
+          >Watch <span class="text-secondary-color">Company</span></a
+        >
+      </div>
+      <ul id="nav-menu" class="md:flex hidden">
+        <li>
+          <a
+            href="#"
+            class="py-2 px-3 text-base hover:text-secondary-color font-semibold duration-300"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="#mens"
+            class="py-2 px-3 text-base hover:text-secondary-color font-semibold duration-300"
+            >Mens</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="py-2 px-3 text-base hover:text-secondary-color font-semibold duration-300"
+            >Womens</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="py-2 px-3 text-base hover:text-secondary-color font-semibold duration-300"
+            >Collection</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="py-2 px-3 text-base hover:text-secondary-color font-semibold duration-300"
+            >About us</a
+          >
+        </li>
       </ul>
+      <div id="icons" class="flex gap-2">
+        <div id="nav-icon" class="space-x-1 text-xl">
+          <i
+            class="ri-account-circle-fill hover:text-secondary-color font-semibold duration-300 cursor-pointer"
+          ></i>
+          <i
+            class="ri-shopping-cart-2-fill hover:text-secondary-color font-semibold duration-300 cursor-pointer"
+          ></i>
+        </div>
+        <div id="hamburger" class="md:hidden">
+          <i class="ri-menu-line text-xl"></i>
+        </div>
+      </div>
     </nav>
-  </header>
-  <script src="./src/app.js"></script>
-</body>
+    <!-- main section start  -->
+    <main class="px-8 py-4 w-full">
+      <section
+        id="home"
+        class="py-5 md:py-16 flex justify-between flex-col md:items-center sm:flex-row"
+      >
+        <div class="left-section py-5">
+          <h1
+            class="text-6xl md:text-8xl font-bold leading-[80px] mb-10 uppercase"
+          >
+            <span class="block">The</span>
+            <span class="block">Watch</span>
+            <span class="block">Company</span>
+          </h1>
+          <button class="btn">Order Now</button>
+        </div>
+        <div class="right-section">
+          <img src="./Images/hero-image.png" alt="" class="w-[500px]" />
+        </div>
+      </section>
+      <section id="mens" class="py-5 md:py-16">
+        <h2 class="text-4xl font-bold text-center relative">
+          Mens Watch Collections
+          <a
+            href="#"
+            class="text-xl underline absolute top-0 right-0 hidden sm:block"
+            >More <i class="ri-arrow-right-line text-xl"></i
+          ></a>
+        </h2>
+        <div
+          id="card-container"
+          class="mt-11 flex flex-wrap  gap-4 items-center justify-center"
+        >
+          <div id="card" class="bg-red-400 w-[320px] px-2">
+            <img src="./Images/Men/m-watch-1.png" alt="" />
+            <div id="card-content">
+              <h3>Mens watch</h3>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+              <h4>Rs. 1199</h4>
+            </div>
+          </div>
+          <div id="card" class="bg-red-400 w-[320px] px-2">
+            <img src="./Images/Men/m-watch-1.png" alt="" />
+            <div id="card-content">
+              <h3>Mens watch</h3>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+              <h4>Rs. 1199</h4>
+            </div>
+          </div>
+          <div id="card" class="bg-red-400 w-[320px] px-2">
+            <img src="./Images/Men/m-watch-1.png" alt="" />
+            <div id="card-content">
+              <h3>Mens watch</h3>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+              <h4>Rs. 1199</h4>
+            </div>
+          </div>
+          <div id="card" class="bg-red-400 w-[320px] px-2">
+            <img src="./Images/Men/m-watch-1.png" alt="" />
+            <div id="card-content">
+              <h3>Mens watch</h3>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+              <h4>Rs. 1199</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./src/app.js"></script>
+  </body>
 </html>
-
-
